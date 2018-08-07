@@ -13,7 +13,7 @@ def resnet_v1_101(images, scope = "resnet_v1_101", is_training = True, num_class
     return net, layers
 
 @register_model_fn("resnet_v1_50")
-def resnet_v1_101(images, scope = "resnet_v1_50", is_training = True, num_classes = 1000,
+def resnet_v1_50(images, scope = "resnet_v1_50", is_training = True, num_classes = 1000,
                     image_size = 224, weight_decay = 1e-5, reuse = False):
 
     with slim.arg_scope(resnet_v1.resnet_arg_scope(weight_decay = weight_decay)):
@@ -22,7 +22,7 @@ def resnet_v1_101(images, scope = "resnet_v1_50", is_training = True, num_classe
     return net, layers
 
 @register_model_fn("resnet_v1_152")
-def resnet_v1_101(images, scope = "resnet_v1_152", is_training = True, num_classes = 1000,
+def resnet_v1_152(images, scope = "resnet_v1_152", is_training = True, num_classes = 1000,
                     image_size = 224, weight_decay = 1e-5, reuse = False):
 
     with slim.arg_scope(resnet_v1.resnet_arg_scope(weight_decay = weight_decay)):
